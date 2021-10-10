@@ -1,0 +1,23 @@
+{
+  "name": "tinyurl",
+  "version": "1.0.0",
+  "description": "a tinyurl service",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hebe889900/tinyUrl.git"
+  },
+  "author": "Zhong Yan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hebe889900/tinyUrl/issues"
+  },
+  "homepage": "https://github.com/hebe889900/tinyUrl#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
