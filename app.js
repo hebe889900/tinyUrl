@@ -10,22 +10,7 @@ const Book = require('./models/bookModel');
 app.use(express.urlencoded({extended : true}));
 app.use(express.json())
 
-bookRouter.route('/books')
-  .post((req, res) => {
-    const book = new Book(req.body);
-    book.save(function(err){
-      if (err) console.error(err);
-    });
-    return res.status(200).json(book);
-  })
-  .get((req, res) => {
-    Book.find((err, books) =>{
-      if(err) {
-        return res.send(err);
-      }
-      return res.json(books);
-    });
-  });
+
 app.use('/api', bookRouter);
 
 
